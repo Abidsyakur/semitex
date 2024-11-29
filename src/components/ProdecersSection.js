@@ -31,13 +31,13 @@ const ProducersSection = () => {
         <h2 className="text-3xl font-bold mb-12">Наши производители</h2>
         
         {/* Producers Row */}
-        <div className="grid grid-cols-5 gap-2 items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
           {producers.map((producer, index) => (
             <div key={index} className="flex flex-col items-center">
               <img
                 src={producer.logo}
                 alt={producer.name}
-                className="h-16 md:h-20 object-contain bg-white p-4 rounded shadow-md"
+                className="h-16 sm:h-20 md:h-24 lg:h-28 object-contain bg-white p-4 rounded shadow-md"
               />
               <p className="mt-4 text-sm font-semibold">{producer.name}</p>
             </div>

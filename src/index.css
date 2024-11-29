@@ -12,6 +12,86 @@ code {
     monospace;
 }
 
+/* Desktop default sudah tertangani. */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .header ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header a {
+    font-size: 14px;
+  }
+
+  .content, .footer {
+    padding: 15px;
+  }
+}
+
+/* Ponsel */
+@media (max-width: 768px) {
+  .header {
+    padding: 8px;
+  }
+
+  .header h1 {
+    font-size: 18px;
+  }
+
+  .header ul {
+    gap: 5px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navigasi tersembunyi secara default pada ponsel */
+.header-nav ul {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .header-nav ul {
+    display: block;
+    text-align: center;
+  }
+}
+
+
 
 
 @tailwind base;
